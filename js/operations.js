@@ -44,6 +44,7 @@ async function generate() {
         let pokedHoles = []
         let count = 0;
         let proposedBoard;
+        antihelp ()
         while (pokedHoles.length < holes) {
             const val = Math.floor(Math.random() * N * N) // Value between 0-N^2
             const randomRowIndex = Math.floor(val / N) // Integer 0-N for row index
@@ -207,6 +208,7 @@ function restoreCheckButton() {
 function check() {
     const game_board = document.getElementById("game-board")
 
+    antihelp ()
     if (game_board === null)
         return;
 
@@ -406,6 +408,7 @@ function check() {
 function retry() {
     const game_board = document.getElementById("game-board")
 
+    antihelp ()
     if (game_board === null)
         return;
 
@@ -432,5 +435,9 @@ button.addEventListener('click', function help() {
 
 function help (){
     let a = "Спочатку порахуй магічну константу";
+    document.getElementById("a").innerHTML = a;
+}
+function antihelp (){
+    let a = "";
     document.getElementById("a").innerHTML = a;
 }
