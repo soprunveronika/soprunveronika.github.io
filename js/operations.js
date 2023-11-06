@@ -1,8 +1,8 @@
 window.onload = emptyTablesGenerator
 let N
 let lastN
-const width = 320 // 455 350
-const height = 260
+const width = 360 // 455 350
+const height = 280
 const board = document.getElementById("board")
 let COMPLEXITY_TYPE = "MEDIUM_LEVEL"
 let Magic_square_obj
