@@ -1,7 +1,7 @@
 window.onload = emptyTablesGenerator
 let N
 let lastN
-const width = 500 // 455 350
+const width = 510 // 455 350
 const height = 310
 const board = document.getElementById("board")
 let COMPLEXITY_TYPE = "MEDIUM_LEVEL"
