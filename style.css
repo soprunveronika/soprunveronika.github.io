@@ -370,7 +370,13 @@ input[type="number"]::-webkit-inner-spin-button {
     display: inherit;
     align-items: center;
     padding-left: 28%;
+    position: relative;
 }
+#board{
+    position: absolute;
+    right: 105px;
+}
+
 
 .magic-number-input {
     font-family: "IBM Plex Sans", Arial, sans-serif;
